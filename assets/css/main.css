@@ -3,6 +3,10 @@
     list-style: none;
 }
 
+header{
+    position: fixed;
+}
+
 .nav-bar *{
     padding-right: 1vw;
     padding-top: 1vh;
