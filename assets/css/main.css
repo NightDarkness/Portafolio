@@ -1,19 +1,37 @@
 *{
     font-family: 'Poppin', sans-serif;
     list-style: none;
+    box-sizing: border-box;
 }
 
-header{
+/* scrollbar*/
+
+html::-webkit-scrollbar{
+    width: 7px;
+    background: #474747;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 255, 255,0.5);
+    border-radius: 5px;
+}
+
+html::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(255, 255, 255,0.7);
+    border-radius: 5px;
+}
+
+/* navbar*/
+
+.nav-bar{
     position: fixed;
-}
-
-.nav-bar *{
-    padding-right: 1vw;
+    width: 100vw;
     padding-top: 1vh;
 }
 
 .nav-bar ul{
     text-align: right;
+    padding-right: 50px;
 }
 
 .nav-bar li{
@@ -26,13 +44,19 @@ header{
 }
 
 video{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     object-fit: cover;
     z-index: -10;
+}
+
+/*content*/
+
+body{
+    overflow-x: hidden;
 }
 
 main{
@@ -42,6 +66,7 @@ main{
     left: 0;
     top: 0;
 }
+
 
 .perfil{
     width: 100vw;
