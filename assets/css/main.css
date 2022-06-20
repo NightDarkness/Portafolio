@@ -59,6 +59,14 @@ body{
     overflow-x: hidden;
 }
 
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 30px;
+}
+
 main{
     z-index: -1 !important;
     position: absolute;
@@ -79,8 +87,7 @@ main{
 }
 
 .imagen{
-    width: 100%;
-    height: 50%;
+
     outline: auto;
     margin-left: 12.5vw;
     margin-right: 5vw;
@@ -89,7 +96,6 @@ main{
 .imagen img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
 .texto{
@@ -103,4 +109,12 @@ main{
     width: 100%;
     height: calc(50% - 10%);
     padding: 20px;
+}
+
+.arrow{
+    position: absolute;
+
+    width: 0px;
+    height: 1000px;
+
 }
