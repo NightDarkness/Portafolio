@@ -187,3 +187,9 @@ body{
     height: 100%;
 }
 
+@media (max-height: 1300px) and (max-width: 1080px) {
+    video{
+        width: 10vw;
+        height: 10vh;
+    }
+}
