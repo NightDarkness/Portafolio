@@ -6,98 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="utf-8">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="/assets/js/code.js" type="text/javascript"></script>
     <link rel="icon" href="assets/icons/LOGO.ico">
     <title>Portafolio</title>
 </head>
 
 <body>
-    <div>
-        <header>
-            <nav class="nav-bar">
-                <ul>
-                    <li><a href="#0">Home</a></li>
-                    <li><a href="#1">Proyectos</a></li>
-                    <li><a href="#2">Curriculum</a></li>
-                </ul>
-            </nav>
-            <video muted autoplay loop>
-                <source src="assets/video/bg.mp4" type="video/mp4">
-            </video>
-        </header>
+    <video muted autoplay loop>
+        <source src="assets/video/bg.mp4" type="video/mp4">
+    </video>
+    <div class="nav-bar">
+        <nav>
+            <ul>
+                <li><a href="#0" onclick="state(0)">Home</a></li>
+                <li><a href="#1" onclick="state(1)">Proyectos</a></li>
+                <li><a href="#2" onclick="state(2)">Curriculum</a></li>
+            </ul>
+        </nav>
     </div>
 
     <div class="container">
 
-        <div class="frame" id="0">
-            <div class="profile_img">
-                <img src="assets/images/perfil.png" alt="profile_image">
+        <div class="frame home active">
+            <div class="first-section">
+                <div class="img-frame">
+                    <img src="/assets/images/perfil.png">
+                </div>
             </div>
-            <div class="about_me">
-                <div class="title">
-                    <h1>Alfonso Lozano Piedra.</h1>
-                </div>
-                <div class="subtitle">
-                    <h2>Junior Web Developer and technician.</h2>
-                </div>
-                <div class="text-box">
-                    <div class="content">
-                        Soy un programador novato el cual gusta de aprender todo tipo de tecnologias nuevas. Me especializo en el uso de Python, JavaScript, HTML y CSS pero tambien poseo 
-                        conocimiento basico en los lenguajes C/C++, C# y Java.<br><br>Actualmente me encuentro estudiando Javascript y Django. Pretendo estudiar a futuro tecnologias como
-                        React, Flask y conseguir certificacion en todos mis conocimientos.
+            <div class="second-section">
+                <div class="sub-container-0">
+                    <div class="title">
+                        <span>Alfonso Lozano Piedra.</span>
+                    </div>
+                    <div class="sub-title">
+                        <span>Front End Dev Jr.</span>
+                    </div>
+                    <div class="text">
+                        <span>
+                            Trabajo en Front-End con HTML5, CSS3, y JavaScript. Tambien manejo Python y poseo conocimientos en diseño grafico (Adobe Suite), 
+                            Linux (debian), Windows, Redes, Servidores, Mantenimiento y reparacion de equipo (hardware) y creacion de software.<br><br>
+    
+                            Por el momento me encuentro estudiando para expandir mis conocimientos, certificarme y poder dedicarme a ser Programador Profesional.<br><br>
+    
+                            Puedes ver mis ultimos trabajos en la seccion de proyectos! :D
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="proyectos">
 
-        <div class="frame" id="1">
-            <div class="projects">
-                <div class="subtitle">
-                    <h2>Proyectos</h2>
-                </div>
-                <div class="text-box-flex">
-                    <div class="project">
-                        <a href="https://bit.ly/3JE6rUM" rel="noopener" target="_blank"> <img title="Beta Now Available!" src="assets/images/MusTrack-Banner.png" alt="mustrack"></a>
-                    </div>
-                    <div class="project">
-                        <a href="#1" rel="noopener"> <img title="Coming Soon" src="assets/images/2DVT-Banner.png" alt="2DVT"></a>
-                    </div>
-                    <div class="project">
-                        <a href="https://bit.ly/3vYpyDR" rel="noopener" target="_blank"> <img title="More Of My Work Soon" src="assets/images/soon.png" alt="soon"></a>
-                    </div>
-                </div>
-            </div>
-            
         </div>
+        <div class="curriculum">
 
-        <div class="frame" id="2">
-            <div class="accounts_img">
-                <img src="assets/images/accounts.png" alt="accounts_image">
-            </div>
-            <div class="about_me">
-                <div class="subtitle">
-                    <h2>Mis cuentas de contacto y proyectos.</h2>
-                </div>
-                <div class="text-box">
-                    <div class="content">
-                        <div class="img_frame">
-                            <a href="https://bit.ly/3vYpyDR" rel="noopener" target="_blank"><img src="assets/images/github.png" alt="github"></a>
-                        </div>
-                        <div class="img_frame">
-                            <a href="https://bit.ly/3GrGhTF" rel="noopener" target="_blank"><img src="assets/images/linkedin.png" alt="linkedin"></a>
-                        </div>
-                        <div class="img_frame">
-                            <a href="http://bit.ly/2ILTkSn" rel="noopener" target="_blank"><img src="assets/images/twitter.png" alt="twitter"></a>
-                        </div>
-                        <div class="img_frame">
-                            <a href="https://bit.ly/3arqKaH" rel="noopener" target="_blank"><img src="assets/images/doc.png" alt="cv"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="secret">
-            <img src="assets/images/risa.png" alt="anya">
         </div>
     </div>
 
