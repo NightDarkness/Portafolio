@@ -285,7 +285,7 @@ video > source{
 @media (max-width: 768px){
     
     .nav-bar nav{
-        width: 60vw;
+        width: 100vw;
     }
     
     .nav-bar li{
@@ -319,6 +319,35 @@ video > source{
     .sub-container-0{
         height:90%;
         text-align: center;
+    }
+
+}
+
+@media (max-width: 453px){
+
+    .nav-bar nav{
+        width: 100vw;
+    }
+    
+    .nav-bar li{
+        padding: 0 1vw 0 1vw;
+        font-size: 4vw;
+    }
+    
+    .nav-bar a{
+        font-size: 4vw;
+    }
+    
+    .title{
+        font-size: 5vh;
+    }
+
+}
+
+@media (max-width: 377px){
+    
+    .title{
+        font-size: 4vh;
     }
 
 }
