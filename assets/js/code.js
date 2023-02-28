@@ -36,10 +36,10 @@ async function state(id){
             document.querySelector("#proyectos").removeAttribute("style");
             break;
         case 2:
-            document.querySelector("#cv").style.animation = "in 1s";
-            document.querySelector("#cv").setAttribute("class",   "frame active");
+            document.querySelector("#About").style.animation = "in 1s";
+            document.querySelector("#About").setAttribute("class",   "frame active");
             await sleep(950);
-            document.querySelector("#cv").removeAttribute("style");
+            document.querySelector("#About").removeAttribute("style");
             break;
         default:
 
