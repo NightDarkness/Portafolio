@@ -4,25 +4,6 @@
     font-family: 'Nunito Sans', sans-serif;
 }
 
-/* scrollbar*/
-
-/*
-
-html::-webkit-scrollbar{
-    width: 7px;
-    background: #474747;
-}
-
-html::-webkit-scrollbar-thumb{
-    background-color: rgba(255, 255, 255,0.5);
-    border-radius: 5px;
-}
-
-html::-webkit-scrollbar-thumb:hover{
-    background-color: rgba(255, 255, 255,0.7);
-    border-radius: 5px;
-} */
-
 body{
     overflow: hidden;
 }
