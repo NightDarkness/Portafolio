@@ -1,23 +1,49 @@
-function state(id){
+function sleep(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+}
 
-    document.querySelector(".active").style.animation = "out 3s";
-    document.querySelector(".active").style.zIndex = "-2";
-    document.querySelector(".active").style.opacity = "0";
-    document.querySelector(".active").removeAttribute("class", active);
+function disableMenu(){
+    document.querySelector("#button0").removeAttribute("onclick");
+    document.querySelector("#button1").removeAttribute("onclick");
+    document.querySelector("#button3").removeAttribute("onclick");
+}
+
+function enableMenu(){
+    document.querySelector("#button0").setAttribute("onclick", "state(0)");
+    document.querySelector("#button1").setAttribute("onclick", "state(1)");
+    document.querySelector("#button3").setAttribute("onclick", "state(2)");
+}
+
+async function state(id){
+    disableMenu();
+    document.querySelector(".active").style.animation = "out 1s";
+    await sleep(950);
+    document.querySelector(".active").removeAttribute("style");
+    
+    document.querySelector(".active").classList.remove("active");
 
     switch(id){
         case 0:
-            document.querySelector(".home").setAttribute("class",   "frame home active");
-            document.querySelector(".active").style.animation = "in 3s";
+            document.querySelector("#home").style.animation = "in 1s";
+            document.querySelector("#home").setAttribute("class",   "frame active");
+            await sleep(950);
+            document.querySelector("#home").removeAttribute("style");
             break;
         case 1:
-            alert("proyectos");
-            document.getElementsByName("home").style.zIndex = "1";
+            document.querySelector("#proyectos").style.animation = "in 1s";
+            document.querySelector("#proyectos").setAttribute("class",   "frame active");
+            await sleep(950);
+            document.querySelector("#proyectos").removeAttribute("style");
             break;
         case 2:
-            alert("curriculum");
+            document.querySelector("#cv").style.animation = "in 1s";
+            document.querySelector("#cv").setAttribute("class",   "frame active");
+            await sleep(950);
+            document.querySelector("#cv").removeAttribute("style");
             break;
         default:
 
     }
+    enableMenu();
 }
+

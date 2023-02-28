@@ -23,15 +23,27 @@ html::-webkit-scrollbar-thumb:hover{
     border-radius: 5px;
 } */
 
+body{
+    overflow: hidden;
+}
+
 /* background */
 
-video{
-    overflow:  hidden;
-    position:  fixed;
-    top:       0;
-    left:      0;
+.video{
+    position: absolute;
+    top: 0;
+    left:0;
     width: 100vw;
-    height:100vh;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+video{
+    width: 100%;
+    height:100%;
+    padding: 0;
+    margin: 0;
     object-fit:cover;
     z-index:   -1;
 }
@@ -57,7 +69,7 @@ video > source{
 }
 
 .nav-bar nav{
-    width: 20vw;
+    width: 25vw;
 }
 
 .nav-bar ul{
@@ -74,12 +86,19 @@ video > source{
     padding: 0 0.5vw 0 0.5vw;
     display: inline-flex;
     align-self: center;
-}
-
-.nav-bar a{
     color: #eee;
     font-size: 1vw;
     text-decoration: none;
+}
+
+.nav-bar li:hover{
+    cursor: pointer;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: #eee;
+    font-size: 1vw;
 }
 
 /*content*/
@@ -96,20 +115,28 @@ video > source{
 }
 
 .frame{
-    /*
-    background: rgba(255,0,0,.25);
-    */
-    width:80%;
-    height:80%;
-    align-self: center;
-}
-
-
-.home{
+    width:0;
+    height:0;
     z-index: -2;
-    opacity: 0;
+    position: absolute;
+    top: 200%;
+    left: 200%;
+    opacity: 1;
     display: inline-flex;
 }
+
+#home{
+    /*background: rgba(255,0,0,.25);*/
+}
+
+#proyectos{
+}
+
+#cv{
+    background: rgba(0,0,255,.25);
+}
+
+/* HOME */
 
 .first-section{
     height:100%;
@@ -183,21 +210,69 @@ video > source{
     font-size: 1.8vh;
 }
 
-.proyectos{
-    z-index: -2;
-    opacity: 0;
-    display: inline-flex;
+/* PROYECTOS */
+
+.block3{
+    height: 100%;
+    width: 33.3333%;
+    display: flex;
+    justify-content: center;
 }
 
-.curriculum{
-    z-index: -2;
-    opacity: 0;
-    display: inline-flex;
+.img-frame-2{
+    width: 25vw;
+    height: 15vw;
+    padding: 0;
+    margin: 0;
+    background: #555;
+    align-self: center;
+    display: flex;
+    justify-content: center;
 }
+
+.img-frame-2 > a{
+    width:99%;
+    height:99%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+.img-frame-2:hover{
+    cursor: pointer;
+}
+
+.img-frame-2 > a > img{
+    width: 100%;
+    height:100%;
+    align-self: center;
+    object-fit: cover;
+}
+/*
+
+#Mustrack{
+    background: rgba(255,0,0,.25);
+}
+
+#NFC-Links{
+    background: rgba(0,0,255,.25);
+}
+
+#Github{
+    background: rgba(255,255,0,.25);
+} */
+
+/* CV */
+
+/* Animaciones y estados */
 
 .active{
     z-index: 1;
     opacity: 1;
+    width:80%;
+    height:80%;
+    position:static;
+    align-self: center;
 }
 
 @keyframes in {

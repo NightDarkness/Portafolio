@@ -12,22 +12,25 @@
 </head>
 
 <body>
-    <video muted autoplay loop>
-        <source src="assets/video/bg.mp4" type="video/mp4">
-    </video>
+    <div class="video">
+        <video muted autoplay loop>
+            <source src="assets/video/bg.mp4" type="video/mp4">
+        </video>
+    </div>
     <div class="nav-bar">
         <nav>
             <ul>
-                <li><a href="#0" onclick="state(0)">Home</a></li>
-                <li><a href="#1" onclick="state(1)">Proyectos</a></li>
-                <li><a href="#2" onclick="state(2)">Curriculum</a></li>
+                <li id="button0" onclick="state(0)">Home</li>
+                <li id="button1" onclick="state(1)">Proyectos</li>
+                <li id="button2"><a href="https://bit.ly/NightDarkness" target="_blank">NFC-Links</a></li>
+                <li id="button3" onclick="state(2)">Curriculum</li>
             </ul>
         </nav>
     </div>
 
     <div class="container">
 
-        <div class="frame home active">
+        <div id="home" class="frame">
             <div class="first-section">
                 <div class="img-frame">
                     <img src="/assets/images/perfil.png">
@@ -54,11 +57,25 @@
                 </div>
             </div>
         </div>
-        <div class="proyectos">
-
+        <div id="proyectos" class="frame">
+            <div id="Mustrack" class="block3">
+                <div class="img-frame-2">
+                    <a href="https://github.com/NIghtDarkness/MusTrack" target="_blank"><img src="/assets/images/MusTrack-Banner.png"></a>
+                </div>
+            </div>
+            <div id="NFC-Links" class="block3">
+                <div class="img-frame-2">
+                    <a href="https://github.com/NIghtDarkness/NFC-Links" target="_blank"><img src="/assets/images/NFC-Links.png"></a>
+                </div>
+            </div>
+            <div id="Github" class="block3">
+                <div class="img-frame-2">
+                    <a href="https://github.com/NIghtDarkness" target="_blank"><img src="/assets/images/Github-wallpaper.jpeg"></a>
+                </div>
+            </div>
         </div>
-        <div class="curriculum">
-
+        <div id="cv" class="frame active">
+            <span>https://bit.ly/3arqKaH</span>
         </div>
     </div>
 
