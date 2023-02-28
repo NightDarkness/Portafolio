@@ -280,21 +280,48 @@ video > source{
     border-radius: 100%;
 }
 
-/*
+/* mobile version */
 
-#Mustrack{
-    background: rgba(255,0,0,.25);
+@media (max-width: 768px){
+    
+    .nav-bar nav{
+        width: 60vw;
+    }
+    
+    .nav-bar li{
+        padding: 0 1vw 0 1vw;
+        font-size: 3vw;
+    }
+    
+    .nav-bar a{
+        font-size: 3vw;
+    }
+
+    .frame{
+        flex-direction: column;
+    }
+
+    .first-section{
+        height:35%;
+        width: 100%;
+    }
+    
+    .second-section{
+        height:65%;
+        width:100%;
+    }
+
+    .img-frame{
+        width: 27vh;
+        height: 27vh;
+    }
+
+    .sub-container-0{
+        height:90%;
+        text-align: center;
+    }
+
 }
-
-#NFC-Links{
-    background: rgba(0,0,255,.25);
-}
-
-#Github{
-    background: rgba(255,255,0,.25);
-} */
-
-/* CV */
 
 /* Animaciones y estados */
 
