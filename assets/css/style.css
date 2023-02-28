@@ -332,6 +332,11 @@ video > source{
         height: 25%;
     }
 
+    .img-frame-2{
+        width: 25vh;
+        height: 15vh;
+    }
+
     .img-frame-3{
         width: 15vh;
         height: 15vh;
