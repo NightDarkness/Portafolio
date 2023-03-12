@@ -98,7 +98,7 @@ video > source{
     top: 0;
     left: 0;
     justify-content: center;
-    animation: banner-animation 4s;
+    animation: banner-animation 5s;
 }
 
 .banner > img{
