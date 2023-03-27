@@ -15,7 +15,7 @@ body{
     top: 0;
     left:0;
     width: 100vw;
-    height: 100vh;
+    height: 100svh;
     padding: 0;
     margin: 0;
 }
@@ -90,7 +90,7 @@ video > source{
     opacity: 0;
     z-index: -5;
     width:100vw;
-    height:100vh;
+    height:100svh;
     position: absolute;
     display: flex;
     padding:0;
@@ -113,7 +113,7 @@ video > source{
     left: 0;
     z-index: 1;
     width:100vw;
-    height: 100vh;
+    height: 100svh;
     display: flex;
     justify-content: center;
 }
