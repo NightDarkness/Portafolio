@@ -245,6 +245,10 @@ video > source{
 
 /* About */
 
+.frame:nth-child(3){
+    justify-content: center;
+}
+
 .block4{
     height: 100%;
     width: 25%;
