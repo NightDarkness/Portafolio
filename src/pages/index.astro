@@ -1,11 +1,108 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import NavBar from '../components/NavBar.astro';
+import Home from '../components/Home.astro';
+import Proyects from '../components/Proyects.astro';
+import About from '../components/About.astro';
 import Layout from '../layouts/Layout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout class="container">
+	<div class="video">
+		<video autoplay loop muted>
+			<source src="/BG.webm" type="video/webm">
+		</video>
+	</div>
+	<NavBar/>
+
+	<Home>
+		
+	</Home>
+
+	<Proyects>
+		
+	</Proyects>
+
+	<About>
+		
+	</About>
 </Layout>
+
+<script>
+
+</script>
+
+<style>
+
+	.container{
+		position: relative;
+		width: 100vw;
+		height: 100vh;
+		overflow: hidden;
+	}
+
+	/* background */
+
+	.video{
+		position: absolute;
+		top: 0;
+		left:0;
+		width: 100vw;
+		height: 100svh;
+		padding: 0;
+		margin: 0;
+	}
+
+	video{
+		opacity: 1;
+		width: 100%;
+		height:100%;
+		padding: 0;
+		margin: 0;
+		object-fit:cover;
+		z-index:   -1;
+	}
+
+	video > source{
+		width: 100%;
+		height:100%;
+	}
+
+	@keyframes banner-animation {
+    
+		0%{
+			opacity: 1;
+			z-index: 5;
+		}
+		50%{
+			opacity: 1;
+			z-index: 5;
+		}
+		100%{
+			opacity:0;
+			z-index: -20;
+		}
+	}
+
+	@keyframes in {
+		0%{
+			z-index: -2;
+			opacity: 0;
+		}
+		100%{
+			z-index: 1;
+			opacity: 1;
+		}
+	}
+
+	@keyframes out {
+		0%{
+			z-index: 1;
+			opacity: 1;
+		}
+		100%{
+			z-index: -2;
+			opacity: 0;
+		}
+	}
+</style>

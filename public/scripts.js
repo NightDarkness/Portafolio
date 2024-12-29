@@ -1,3 +1,7 @@
+function test(){
+    alert("test");
+}
+
 function sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
 }
@@ -25,25 +29,24 @@ async function state(id){
     switch(id){
         case 0:
             document.querySelector("#home").style.animation = "in 1s";
-            document.querySelector("#home").setAttribute("class",   "frame active");
+            document.querySelector("#home").setAttribute("class",   "slide active");
             await sleep(950);
             document.querySelector("#home").removeAttribute("style");
             break;
         case 1:
-            document.querySelector("#proyectos").style.animation = "in 1s";
-            document.querySelector("#proyectos").setAttribute("class",   "frame active");
+            document.querySelector("#proyects").style.animation = "in 1s";
+            document.querySelector("#proyects").setAttribute("class",   "slide active");
             await sleep(950);
-            document.querySelector("#proyectos").removeAttribute("style");
+            document.querySelector("#proyects").removeAttribute("style");
             break;
         case 2:
-            document.querySelector("#About").style.animation = "in 1s";
-            document.querySelector("#About").setAttribute("class",   "frame active");
+            document.querySelector("#about").style.animation = "in 1s";
+            document.querySelector("#about").setAttribute("class",   "slide active");
             await sleep(950);
-            document.querySelector("#About").removeAttribute("style");
+            document.querySelector("#about").removeAttribute("style");
             break;
         default:
 
     }
     enableMenu();
 }
-

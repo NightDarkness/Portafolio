@@ -1,0 +1,65 @@
+---
+
+---
+
+<div class="nav-bar">
+    <nav>
+        <ul>
+            <li id="button0" onclick="state(0)">Home</li>
+            <li id="button1" onclick="state(1)">Proyects</li>
+            <li id="button2"><a href="https://mx.linkedin.com/in/alfonso-lozano-piedra-57434123a?trk=people-guest_people_search-card" target="_blank">LinkedIn</a></li>
+            <li id="button3" onclick="state(2)">About</li>
+        </ul>
+    </nav>
+</div>
+    
+<style>
+    /* navbar*/
+
+    .nav-bar{
+        position: absolute;
+        width: 100vw;
+        height: 10vh;
+        padding: 0;
+        margin: 0;
+        top:0;
+        left:0;
+        display: flex;
+        justify-content: right;
+        z-index: 2;
+    }
+
+    .nav-bar nav{
+        width: 25vw;
+    }
+
+    .nav-bar ul{
+        align-self: center;
+        width:100%;
+        height:100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-bar li{
+        padding: 0 0.5vw 0 0.5vw;
+        display: inline-flex;
+        align-self: center;
+        color: #eee;
+        font-size: 1vw;
+        text-decoration: none;
+    }
+
+    .nav-bar li:hover{
+        cursor: pointer;
+    }
+
+    .nav-bar a{
+        text-decoration: none;
+        color: #eee;
+        font-size: 1vw;
+    }
+
+</style>
